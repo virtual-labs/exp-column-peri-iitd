@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/progressBar.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./js/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="./css/imgs.css" />
     <link rel="stylesheet" href="./css/scenes.css" />
@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="./css/quiz.css" />
     <link rel="stylesheet" href="./css/certificate.css" />
     <link rel="stylesheet" href="./css/chart.css" />
+
+    <link rel="stylesheet" href="./final_styling/fix_styling.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./final_styling/fix_styling.js"></script>
   </head>
   <img src="" alt="" />
   <body>
@@ -53,7 +57,7 @@
               <a>
                 <span class="step">
                   <span
-                    >Placing HD Towers (Heavy Duty Towers) in the lab.</span
+                    >Construct one side of a column.</span
                   >
                 </span>
               </a>
@@ -61,7 +65,7 @@
             <li>
               <a>
                 <span class="step">
-                  <span>Attaching horizontal and diagonal bracing to support HD Tower.</span>
+                  <span>Similarily connecting remaining sides of a column.</span>
                 </span>
               </a>
             </li>
@@ -69,7 +73,7 @@
               <a>
                 <span class="step">
                   <span>
-                    Placing aluminium beam and timber beam on the top of basic frame.
+                    Attaching external conrer to connect all the sides of a column.
                   </span>
                 </span>
               </a>
@@ -77,11 +81,11 @@
             <li>
               <a>
                 <span class="step">
-                  <span>Placing sheathing on the top of timber beam.</span>
+                  <span>Add wedge pin to connect panel and corner rigidly.</span>
                 </span>
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a>
                 <span class="step">
                   <span
@@ -96,7 +100,7 @@
                   <span>Making Slab using short prop, aluminum beam and timber beam.</span>
                 </span>
               </a>
-            </li>
+            </li> -->
             <!-- <li>
               <a>
                 <span class="step">
@@ -142,8 +146,8 @@
               <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
-              <div class="progress-step" data-title=""></div>
-              <div class="progress-step" data-title=""></div>
+              <!-- <div class="progress-step" data-title=""></div>
+              <div class="progress-step" data-title=""></div> -->
               <!-- <div class="progress-step" data-title=""></div> -->
               <!-- <div class="progress-step" data-title=""></div> -->
               <!-- <div class="progress-step" data-title=""></div>
@@ -169,10 +173,10 @@
             <!-- * Project Intro Goes Here -->
             <div class="project-intro">
               <span class="heading">Objective:</span>
-              <p class="description">To Set the Beam and Slab using Flex System.</p>
+              <p class="description">To Set the Column Formwork (PERI).</p>
               <span class="heading">Apparatus Materials:</span>
               <p class="description">
-                Tripod Stand, CT prop, fourway head, Aluminium Beam, Timber Beam, Plywood Sheathing, Beam Forming support. 
+                Form panel, Form corner, Push prop, Brace Kicker, Wedge pin . 
               </p>
             </div>
 
@@ -196,13 +200,13 @@
                 src="./src/images/template_imgs/blinkArrow.webp"
               />
             
-            <!-- <section class="anime-main"> -->
-            <section class="anime-main" onmousemove="getCursor(event)">
+             <section class="anime-main">
+            <!-- <section class="anime-main" onmousemove="getCursor(event)"> -->
               <!-- * Welcome note About Experiment-->
               <div class="welcome-box">
                 <img
                   class="iit-logo"
-                  src="./src/images/iit-delhi-logo.png"
+                  src="./src/images/template_imgs/iit-delhi-logo.png"
                   alt=""
                 />
                 <div class="title">
@@ -220,7 +224,7 @@
                 <div class="prof-description">
                   <img
                     class="prof-img"
-                    src="./src/images/prof_image_kn_jha.jpeg"
+                    src="./src/images/template_imgs/prof_image_kn_jha.jpeg"
                     alt="Prof. K. N. Jha Image"
                   />
                   <span>Prof. K. N. Jha</span>
@@ -370,6 +374,9 @@
                 <input class="submit-btn btn" type="submit" value="Submit" />
               </form>
 
+              <!-- *Background blur image for white images -->
+              <div class="blur_bcg"></div>
+
               <!-- * Template element -->
               <div class="utm-button"></div>
 
@@ -408,7 +415,7 @@
               <!-- * End Certificate Template -->
               <div class="certificate">
                 <div class="header">
-                  <img src="./src/images/logo.png" alt="" class="logo" />
+                  <img src="./src/images/template_imgs/logo.png" alt="" class="logo" />
                   <span class="title cursive">Certificate of Completion</span>
                 </div>
                 <div class="student-detail">
@@ -427,7 +434,7 @@
                     <span
                       style="font-size: 1.5rem; text-transform: capitalize"
                       class="bold sans red"
-                      >Foundation in foamwork</span
+                      >Foundation in Formwork</span
                     >
                   </div>
                   <div class="">
@@ -813,6 +820,18 @@
         class="main-window-imgs"
         src="./src/images/column_wedge_pin_right_6.png"
         alt="column_wedge_pin_right_6.png"
+    />
+    <img
+        class="main-window-imgs"
+        src="./src/images/menu_cover.png"
+    />
+    <img
+        class="main-window-imgs"
+        src="./src/images/menu_cover.png"
+    />
+    <img
+        class="main-window-imgs"
+        src="./src/images/objective.png"
     />
     
 
